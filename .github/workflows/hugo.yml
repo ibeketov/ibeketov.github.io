@@ -55,7 +55,10 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --source site \
+            --destination ./public \
+            --config site/hugo.toml
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
