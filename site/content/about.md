@@ -12,7 +12,7 @@ showFullContent = true
 readingTime = false
 hideComments = false
 +++
-## Introduction
+# About
 
 This is **bold** text, and this is *emphasized* text.
 
